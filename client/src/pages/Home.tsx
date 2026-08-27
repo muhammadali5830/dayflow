@@ -158,7 +158,10 @@ export default function Home() {
       setEventTitle("");
       setLastUpdated("Updated just now");
       if (isAuthenticated) saveRoutine.mutate({ planDate: today.toISOString().slice(0, 10), preferences, blocks: [...revised, newEvent] });
-      toast.succes
+      toast.success("Your day was replanned around the new event");
+    }, 850);
+  };
+
   return (
     <div className="dayflow-shell">
       <aside className="sidebar">
