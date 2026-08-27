@@ -162,6 +162,7 @@ export default function Home() {
     }, 850);
   };
 
+
   
   return (
     <div className="dayflow-shell">
